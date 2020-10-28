@@ -5,6 +5,7 @@ import {
   setBiggestResource,
   setSmallestResource,
   setAverageResourcesSize,
+  jsonToCSV,
 } from '../utils';
 
 async function getResources(options) {
@@ -51,7 +52,12 @@ export const getStatistics = async () => {
 
 export const getCsv = async () => {
   try {
-    return 'csv';
+    const options = { max_results: 100, next_cursor: null };
+    const resources = await getResources(options);
+    if (!resources) throw new MissingDataError();
+
+    const csv = jsonToCSV(resources);
+    return csv;
   } catch (err) {
     throw err;
   }
