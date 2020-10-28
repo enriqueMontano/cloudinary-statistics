@@ -10,6 +10,7 @@ const { PORT } = process.env;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+loaders.middlewares(app);
 loaders.router(app);
 
 http.createServer(app).listen(PORT, () => {

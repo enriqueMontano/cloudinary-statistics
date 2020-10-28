@@ -7,6 +7,7 @@ import {
   setAverageResourcesSize,
   jsonToCSV,
 } from '../utils';
+import { MissingDataError } from '../errors';
 
 async function getResources(options) {
   const response = await cloudinaryApi(options, function (error, result) {
