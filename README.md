@@ -94,5 +94,6 @@ wallhdpic_1_gwkxuu,,wallhdpic_1_gwkxuu,jpg,1580932187,image,upload,2020-02-05T19
 
 Project is created with:
 
+- Node: 12.14.1
 - Express: v4.16.3
-- Cloudinary: v1.23.0
+- Docker: v19.03.13
