@@ -4,8 +4,9 @@ import http from 'http';
 import express from 'express';
 import * as loaders from './loaders';
 
+import { PORT } from './utils/constants.util';
+
 const app = express();
-const { PORT } = process.env;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

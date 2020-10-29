@@ -1,11 +1,9 @@
 {
   "name": "cloudinary-statistics",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "nodemon --exec babel-node src/app.js",
-    "dev": "DEBUG=express-generator:* nodemon ./bin/www",
-    "dev-windows": "nodemon ./bin/www"
+    "dev": "nodemon --exec babel-node src/app.js"
   },
   "dependencies": {
     "cloudinary": "^1.23.0",
