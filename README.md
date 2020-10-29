@@ -17,12 +17,30 @@ $ cd cloudinary-statistics
 $ npm i
 ```
 
+3. Set environment variables:
+
+- Create a .env file in the project root directory:
+
+```bash
+$ touch .env
+```
+
+- Add Cloudinary environment variables on new lines in the form of NAME=VALUE. For example:
+
+```
+CLOUDINARY_KEY=your_cloudinary_key
+CLOUDINARY_SECRET=your_cloudinary_secret
+CLOUDINARY_NAME=your_cloudinary_name
+```
+
+_You can consult the .env.template file to use it as an example of what you need, the port is not strictly necessary._
+
 ## How to run
 
 On the project root directory
 
 ```bash
-$ npm start
+$ npm run dev
 ```
 
 ## How to run with Docker
@@ -41,7 +59,7 @@ In your default browser or Postman app, you can do two different calls:
 
 1. Get some statistics:
 
-    URL: http://localhost:5000/cloudinary/statistics
+   URL: http://localhost:5000/cloudinary/statistics
 
 Sample response:
 
@@ -62,7 +80,7 @@ Sample response:
 
 2. Get a CSV:
 
-    URL: http://localhost:5000/cloudinary/statistics
+   URL: http://localhost:5000/cloudinary/statistics
 
 Sample response:
 
