@@ -3,8 +3,7 @@ import 'dotenv/config';
 import http from 'http';
 import express from 'express';
 import * as loaders from './loaders';
-
-import { PORT } from './utils/constants.util';
+import { PORT } from './utils';
 
 const app = express();
 
