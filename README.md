@@ -59,7 +59,7 @@ In your default browser or Postman app, you can do two different calls.
 
 1. Get some statistics:
 
-   URL: http://localhost:5000/cloudinary/statistics
+   URL: http://localhost:PORT/cloudinary/statistics
 
 Sample response:
 
@@ -80,7 +80,7 @@ Sample response:
 
 2. Get a CSV:
 
-   URL: http://localhost:5000/cloudinary/csv
+   URL: http://localhost:PORT/cloudinary/csv
 
 Sample response:
 
@@ -105,3 +105,4 @@ Project is created with:
 - Node: 12.14.1
 - Express: v4.16.3
 - Docker: v19.03.13
+- Jest: v26.6.3
