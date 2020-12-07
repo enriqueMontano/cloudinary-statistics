@@ -90,6 +90,14 @@ wallhdpic_1_gwkxuu,,wallhdpic_1_gwkxuu,jpg,1580932187,image,upload,2020-02-05T19
 ...
 ```
 
+## Test
+
+To run the tests, in the root directory launch the following command:
+
+```
+$ npm run test
+```
+
 ## Technologies
 
 Project is created with:
