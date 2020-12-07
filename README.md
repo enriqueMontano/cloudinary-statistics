@@ -37,7 +37,7 @@ _You can consult the .env.template file to use it as an example of what you need
 
 ## How to run
 
-On the project root directory
+To launch the server in developer mode, on the project root directory
 
 ```bash
 $ npm run dev
