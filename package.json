@@ -1,7 +1,8 @@
 {
   "name": "cloudinary-statistics",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.0.2",
+  "description": "Application that provides us with Cloudinary API statistics.",
+  "private": false,
   "nodemonConfig": {
     "exec": "npm run dev",
     "watch": [
@@ -36,6 +37,8 @@
     "json2csv": "^5.0.3",
     "node-mocks-http": "^1.9.0",
     "npm-run-all": "^4.1.5",
+    "pino": "^6.7.0",
+    "pino-pretty": "^4.3.0",
     "rimraf": "^3.0.2"
   },
   "devDependencies": {

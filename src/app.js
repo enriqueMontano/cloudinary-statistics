@@ -14,5 +14,5 @@ loaders.middlewares(app);
 loaders.router(app);
 
 http.createServer(app).listen(PORT, () => {
-  console.log(`Server running and listening on port: ${PORT}`);
+  logger.info(`Server running and listening on port: ${PORT}`);
 });
